@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null" >
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_search_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/img_search_cross"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/drag_up_to_read"
+        android:textSize="@dimen/splash_txv_15"
+        kellton:customTypeFace="@string/font_museosans_300" />
+
+    <ImageView
+        android:id="@+id/img_search_cross"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/common_image_content_desc"
+        android:padding="10dp"
+        android:src="@drawable/ic_cross_green" />
+
+</RelativeLayout>

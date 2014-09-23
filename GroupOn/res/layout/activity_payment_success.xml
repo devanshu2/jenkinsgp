@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_grand_total"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_payment_sucess"
+                android:gravity="center"
+                android:text="@string/tag_awesome"
+                android:textColor="@color/cart_offer_amt"
+                android:textSize="@dimen/splash_txv_18"
+                kellton:customTypeFace="@string/font_museosans_500" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:text="@string/tag_payment_success"
+                android:textColor="@color/common_grey_2"
+                android:textSize="@dimen/splash_txv_12"
+                kellton:customTypeFace="@string/font_museosans_500" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_email_green" />
+
+                <EditText
+                    android:id="@+id/edt_email_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textfield_default_holo_light"
+                    android:hint="@string/hint_email"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/common_grey_1"
+                    android:textColorHint="@color/common_grey_1"
+                    android:textSize="@dimen/splash_txv_16" />
+            </LinearLayout>
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:padding="10dp"
+                android:text="@string/title_payment_summary"
+                android:textColor="@color/cart_offer_amt"
+                android:textSize="@dimen/splash_txv_17"
+                kellton:customTypeFace="@string/font_museosans_500" />
+
+            <LinearLayout
+                android:id="@+id/order_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@null"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/lay_grand_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txv_continue"
+        android:layout_marginBottom="4dp"
+        android:background="@color/common_yellow_bg_color" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/buy_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/grand_total"
+            android:textColor="@color/common_grey_2"
+            android:textSize="@dimen/splash_txv_15"
+            kellton:customTypeFace="@string/font_museosans_500" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/total_amount_pay_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/offer_total_price"
+            android:textSize="@dimen/splash_txv_15"
+            kellton:customTypeFace="@string/font_museosans_500" />
+    </RelativeLayout>
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@id/txv_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradient_green_no_border_all_round"
+        android:gravity="center"
+        android:text="@string/button_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/splash_txv_17"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/deal_background"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/deals_list_item_height"
+    android:contentDescription="@string/common_image_content_desc"
+    android:src="@drawable/ic_default_deal_bg" />

@@ -1,0 +1,18 @@
+<!-- same XML file is used on CategoryDealsActivity and SearchResultsActivity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_green_no_border_no_round" >
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/groupon_header" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout"
+        layout="@layout/layout_tabs_and_list_for_deals" />
+
+</RelativeLayout>

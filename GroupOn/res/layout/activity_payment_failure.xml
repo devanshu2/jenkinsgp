@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="15dp"
+            android:drawableTop="@drawable/ic_payment_failure"
+            android:gravity="center"
+            android:text="@string/tag_oh_no"
+            android:textColor="@color/red_label_oh_no"
+            android:textSize="@dimen/splash_txv_18"
+            kellton:customTypeFace="@string/font_museosans_500" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/tag_payment_wrong"
+            android:textColor="@color/common_grey_2"
+            android:textSize="@dimen/splash_txv_12"
+            kellton:customTypeFace="@string/font_museosans_500" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/tag_like_to_try_again"
+            android:textColor="@color/common_grey_2"
+            android:textSize="@dimen/splash_txv_12"
+            kellton:customTypeFace="@string/font_museosans_500" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rect_all_round_grey_bg_no_border"
+            android:gravity="center"
+            android:text="@string/label_cacnel"
+            android:textColor="@color/common_grey_2"
+            android:textSize="@dimen/splash_txv_17"
+            kellton:customTypeFace="@string/font_museosans_500" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_try_again"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_green_no_border_all_round"
+            android:gravity="center"
+            android:text="@string/try_again"
+            android:textColor="@color/white"
+            android:textSize="@dimen/splash_txv_17"
+            kellton:customTypeFace="@string/font_museosans_500" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp" >
+
+    <ImageView
+        android:id="@+id/img_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_american_express"
+        android:contentDescription="@string/common_image_content_desc"
+        android:scaleType="centerCrop" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_card_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        kellton:customTypeFace="@string/font_undergrad_ultra" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_card_holder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/splash_txv_15"
+            kellton:customTypeFace="@string/font_undergrad_ultra" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_card_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/splash_txv_15"
+            kellton:customTypeFace="@string/font_undergrad_ultra" />
+    </RelativeLayout>
+
+</RelativeLayout>

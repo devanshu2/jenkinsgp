@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize" >
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_coupon_deal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:textColor="@color/cart_offer_amt"
+        android:textSize="@dimen/splash_txv_17"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txv_coupon_deal_title"
+        android:background="@color/common_grey_4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txv_continue_coupons"
+        android:layout_below="@id/divider" >
+
+        <LinearLayout
+            android:id="@+id/root_layout_coupon_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@id/txv_continue_coupons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradient_green_no_border_all_round"
+        android:gravity="center"
+        android:text="@string/button_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/splash_txv_17"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+</RelativeLayout>

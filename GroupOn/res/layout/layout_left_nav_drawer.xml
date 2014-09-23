@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_window"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/gradient_nav_drawer" >
+
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:background="#B3B3B3"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/selector_drawer_list" />
+
+    <ImageView
+        android:id="@+id/img_groupongo_pin"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/common_image_content_desc"
+        android:src="@drawable/ic_groupongo_pin_white" />
+
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/img_groupongo_pin"
+        android:contentDescription="@string/common_image_content_desc"
+        android:gravity="center"
+        android:src="@drawable/ic_groupon_logo" />
+
+</RelativeLayout>

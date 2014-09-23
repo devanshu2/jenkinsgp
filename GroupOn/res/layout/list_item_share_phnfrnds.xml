@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:id="@+id/root_item_contact_list"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@null" >
+
+    <ImageView
+        android:id="@+id/img_frnd"
+        android:layout_width="@dimen/profile_screen_square_avatar_size"
+        android:layout_height="@dimen/profile_screen_square_avatar_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/common_image_content_desc"
+        android:padding="10dp"
+        android:src="@drawable/ic_contact_picture" />
+
+    <ImageView
+        android:id="@+id/img_chbx"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/common_image_content_desc"
+        android:padding="10dp"
+        android:src="@drawable/ic_unchecked" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_chbx"
+        android:layout_toRightOf="@id/img_frnd"
+        android:orientation="vertical" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_frnd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_go_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/cart_offer_amt"
+            android:textSize="@dimen/splash_txv_16"
+            kellton:customTypeFace="@string/font_museosans_500" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_frnd_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_grey_2"
+            android:textSize="@dimen/splash_txv_12"
+            kellton:customTypeFace="@string/font_museosans_500" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_grey_4"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/go_frnds_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/view_divider"
+        android:layout_marginBottom="4dp"
+        android:background="@color/common_grey_4"
+        android:visibility="gone" />
+
+</RelativeLayout>

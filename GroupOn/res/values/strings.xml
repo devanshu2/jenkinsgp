@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">Groupon Go</string>
+
+    <!-- API Secure Values -->
+    <string name="api_platform_key">mnogfg32st543645</string>
+    <string name="api_platform_salt">abcdefghijggpqr34</string>
+
+    <!-- facebook -->
+    <string name="facebook_app_id">297513770408577</string>
+
+    <!-- Push Sender ID- same is to be used at server code -->
+    <string name="gcm_sender_id">608326587883</string>
+
+    <!-- twitter -->
+    <string name="twitter_consumer_key">j9yy2mhOO6RgvfdGbAr0TWVsp</string>
+    <string name="twitter_consumer_secret">styxh15BapgAsNCQleOtAvtR08asD3iqh7DxGoZa20EJryru0D</string>
+
+    <!-- Konotor -->
+    <string name="konotor_app_id">79986b52-5c00-48f0-bdb3-421a30906bf8</string>
+    <string name="konotor_app_key">76ffbd96-c3ae-4d6b-a622-b956592a9cdd</string>
+
+    <!-- MAT -->
+    <string name="mat_advertiser_id">23386</string>
+    <string name="mat_conversion_key">8984996cded41d9b83786049284dd228</string>
+
+    <!-- Share Deal Link -->
+    <string name="share_deal_link_scheme">http</string>
+    <string name="share_deal_link_share_host">share.groupongo.in</string>
+
+    <!-- secondary intent-filter data-element to make home screen browsable -->
+    <string name="share_deal_link_api_host">api.groupongo.in</string>
+    <string name="share_deal_link_api_path">/index.html</string>
+
+    <!-- custom font file names that are kept in assets -->
+    <string name="font_museosans_100">fonts/exljbris-MuseoSans-100.otf</string>
+    <string name="font_museosans_300">fonts/exljbris-MuseoSans-300.otf</string>
+    <string name="font_museosans_500">fonts/exljbris-MuseoSans-500.otf</string>
+    <string name="font_museosans_700">fonts/exljbris-MuseoSans-700.otf</string>
+    <string name="font_undergrad_ultra">fonts/undergrad-ultrathin.ttf</string>
+    <string name="font_avantgarde_md_bt_medium">fonts/avantgarde-md-bt-medium.ttf</string>
+
+    <!-- progress dialog messages -->
+    <string name="prog_loading">Loading&#8230;</string>
+
+    <!-- network layer error messages -->
+    <string name="error_no_network">It seems your internet connection has gone out for a date.</string>
+    <string name="error_invalid_response_from_server">Hmm&#8230; things are mysteriously slow today.\nHang in there, we’ve got Sherlock on the case.</string>
+    <string name="error_request_timed_out">Our servers have taken a time out. Hang in there. They should be back in two wags of a dog’s tail.</string>
+    <string name="error_no_connection_with_server">Our servers seem to be down. But not to worry, we’re doing our best to cheer them up.</string>
+    <string name="error_generic_message">Sorry for the trouble. We will come back soon&#8230;</string>
+    <string name="error_missing_play_services">Device should have Google Play Services to get push notifications for this application.</string>
+    <string name="common_image_content_desc">Groupon Go</string>
+
+    <!-- local notification messages -->
+    <string name="msg_vicinity_notification">You have %1$s unavailed deal(s) from %2$s and it’s just %3$s away from you. Now if only finding parking was as easy as finding deals.</string>
+    <string name="msg_coupon_code_copied">Your coupon code is copied to clipboard.</string>
+
+    <!-- Gather Interests Activity -->
+    <string name="category_name_all_deals">All Deals</string>
+    <string name="what_kind_of_deals">What kind of deals</string>
+    <string name="would_you_like">would you like to see?</string>
+
+    <!-- Deals/Coupons List -->
+    <string name="msg_no_deals_found">No deals found.</string>
+    <string name="msg_no_more_deals_found">No more deals found.</string>
+    <string name="msg_deals_updated">Deals updated.</string>
+    <string name="msg_more_deals_added">More deals added to list.</string>
+
+    <!-- user registration -->
+    <string name="msg_enter_phone">Please enter your mobile number.</string>
+    <string name="hint_phone_number">Your 10 digit Phone Number</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+
+    <!-- user register dialog -->
+    <string name="register_dlg_title">Number Confirmation</string>
+    <string name="register_dlg_footer">Is that correct?</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_continue">Continue</string>
+
+    <!-- Location/GPS is off dialog -->
+    <string name="dialog_location_is_off_title">Location is not enabled</string>
+    <string name="dialog_gps_is_off_title">GPS is not enabled</string>
+    <string name="dialog_location_is_off_content">Groupon Go would like to use your current location.</string>
+    <string name="dialog_location_or_gps_is_off_footer">Knowing where you are can help us get you a great deal close by.</string>
+    <string name="dialog_gps_is_off_content">Groupon Go would like to use your more accurate location.</string>
+    <string name="button_not_now">Not now</string>
+    <string name="button_settings">Settings</string>
+
+    <!-- city changed dialog -->
+    <string name="dialog_title_city_changed">City Changed</string>
+    <string name="dialog_msg_city_changed">Your current city is %1$s. Tap here, if you want to explore deals there!</string>
+    <string name="button_no_thanks">No Thanks</string>
+    <string name="button_update_city">Update Deals</string>
+
+    <!-- user verification -->
+    <string name="verfication_code_hint">Enter Verification Code</string>
+    <string name="msg_enter_verif_code">We’ve just sent you a 6-digit activation code via SMS. Enter it here so we can let you in.</string>
+    <string name="dlg_resend_code_title">Incorrect Code</string>
+    <string name="dlg_resend_code_content">Oh no, the code doesn’t seem to be working.</string>
+    <string name="dlg_resend_code_footer">Would you like us to resend it?</string>
+    <string name="dlg_otp_expired_title">Activaton Code Expired</string>
+    <string name="button_resend">Resend</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="msg_checking_your_inbox">Checking your Inbox:&#160;</string>
+    <string name="msg_otp_sms_not_detected">It seems you have not yet received the SMS. You can wait more or tap here, if you would like us to resend it.</string>
+    <string name="msg_otp_sms_detected">Yay! Received the activation code. Now sending verifcation request for you.</string>
+
+    <!-- user profile screen -->
+    <string name="hint_your_name">Your Name</string>
+    <string name="hint_mobile_number">Mobile Number</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="label_connect_with_fb">Connect with Facebook</string>
+    <string name="label_connect_with_twitter">Connect with Twitter</string>
+    <string name="connected_as">Connected as</string>
+    <string name="label_stored_cards">Stored Cards</string>
+    <string name="label_your_interests">Your Interests</string>
+    <string name="label_share_the_app">Share the App</string>
+    <string name="label_change_phn_num">Change Phone Number</string>
+    <string name="error_invalid_email">Please enter a valid email.</string>
+    <string name="dialog_msg_remove_profile_pic">Are you sure you want to remove the picture?</string>
+
+    <!-- Left Navigation Drawer and related screen headers -->
+    <string-array name="drawer_item">
+        <item>Home</item>
+        <item>My Purchases</item>
+        <item>My Profile</item>
+        <item>Share &amp; Earn</item>
+        <item>Feedback</item>
+        <item>About</item>
+    </string-array>
+
+    <string name="screen_header_my_purchases">My Purchases (%1$s)</string>
+    <string name="screen_header_my_profile">My Profile</string>
+    <string name="screen_header_share_and_earn">Share &amp; Earn</string>
+    <string name="screen_header_feedback">Feedback</string>
+    <string name="screen_header_about">About %1$s</string>
+
+    <!-- My Credits Screen -->
+    <string name="label_my_promo_coupon">My Promotion Coupon</string>
+    <string name="label_my_credits">My Credits</string>
+    <string name="msg_my_credit_screen">Share the promo code %1$s with\nyour friends and they get an additional %2$s off\non their first %3$s deal. The best part,\nonce they buy a deal,\nyou get Go Credit worth \u20B9 %4$s too.</string>
+    <string name="msg_instant_karma">Instant karma!</string>
+    <string name="label_share_with">Share with</string>
+
+    <!-- home screen -->
+    <string-array name="tab_title">
+        <item>NEARBY</item>
+        <item>BESTSELLING</item>
+        <item>OUR PICKS</item>
+    </string-array>
+
+    <string name="msg_exploring_deals_in">Exploring Deals in&#160;</string>
+    <string name="msg_count_deals_in">%1$s+ Deals in&#160;</string>
+    <string name="msg_drag_down_categories">VIEW CATEGORIES</string>
+    <string name="msg_drag_up_categories">TAP TO MINIMIZE</string>
+
+    <!-- Search Result screen -->
+    <string-array name="tab_titles_search_screen">
+        <item>BY RATING</item>
+        <item>BY LOCATION</item>
+    </string-array>
+    <string-array name="tab_titles_search_screen_temp">
+        <item>SEARCH</item>
+    </string-array>
+
+    <string name="toast_no_search_results">Sorry, your search yielded no results.\nWe promise to fire somebody.\nCheck keyword for spelling.</string>
+
+    <!-- select your city screen -->
+    <string name="screen_header_select_your_city">Select Your City</string>
+    <string name="button_close">Close</string>
+    <string name="label_current_location">Current Location</string>
+    <string name="label_top_cities">Top Cities</string>
+    <string name="msg_select_city">Please select your city.</string>
+
+    <!-- deal list item -->
+    <string name="label_bought">Bought</string>
+    <string name="label_discount">Discount</string>
+    <string name="label_per_person">Per Person</string>
+
+    <!-- deal detail screen -->
+    <string name="buy_now">BUY NOW</string>
+    <string name="drag_up">DRAG UP TO READ MORE</string>
+    <string name="highlight">Highlights</string>
+    <string name="valid_upto">Valid upto</string>
+    <string name="fine_print">Fine Print</string>
+    <string name="total">Total</string>
+    <string name="offer">Offer</string>
+    <string name="label_sold_out">SOLD OUT</string>
+    <string name="cost_for">Cost for</string>
+    <string name="msg_redeem_help_1">Ensure you are at merchant location</string>
+    <string name="msg_redeem_help_2">Tap AVAIL DEAL</string>
+    <string name="msg_redeem_help_3">Show merchant the paperless coupon on your phone</string>
+    <string name="msg_redeem_help_4">Coupon will not show up in the list, once you have availed the deal</string>
+
+    <!-- offer detail -->
+    <string name="pay_now">PAY NOW</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="Rs">\u20B9</string>
+    <string name="offer_detail">Offer Details</string>
+    <string name="redeem_till">Avail till</string>
+    <string name="on_min_purchase_of">&#160;on a min purchase of&#160;</string>
+    <string name="label_avail_at">Avail at</string>
+    <string name="label_applicable_on_at">Applicable on</string>
+    <string name="button_save">SAVE</string>
+    <string name="msg_offers_added_to_cart">Offers added to cart.</string>
+    <string name="lbl_sold_out">Sold\nOut</string>
+    <string name="dlg_msg_added_more_offer">We have revised your offer quantity as per availability</string>
+
+    <!-- photo edit options dialog texts -->
+    <string name="photo_option_take_new_photo">Take a new picture</string>
+    <string name="photo_option_choose_photo">Choose a picture from phone</string>
+    <string name="photo_option_remove_photo">Remove picture</string>
+    <string name="photo_option_cancel">Cancel</string>
+    <string name="error_opening_camera">Error in opening camera to take the picture.</string>
+    <string name="error_opening_gallery">Error in opening library to select the picture.</string>
+    <string name="error_saving_profile_pic">Error in saving profile picture.</string>
+
+    <!-- Search Product Screen -->
+    <string name="hint_search_deals">Search deals by keyword</string>
+    <string name="recent_searches">RECENT SEARCHES</string>
+    <string name="msg_enter_search_text">Please enter some text to search.</string>
+    <string name="label_view_deals_by_category">View Deals By Category</string>
+
+    <!-- user cart screen -->
+    <string name="button_pay_amount">PAY \u20B9 %1$s</string>
+    <string name="enter_coupon_code">Enter Coupon Code</string>
+    <string name="toast_select_one_offer">Select at least one offer.</string>
+    <string name="msg_all_offers_sold_out">All offers of this deal are SOLD OUT.</string>
+    <string name="hint_coupon_code">Coupon Code</string>
+    <string name="button_dlg_ok">OK</string>
+    <string name="button_dlg_yes">Yes</string>
+    <string name="button_dlg_no">No</string>
+    <string name="dlg_msg_remove_coupon">Are you sure you want to remove this coupon?</string>
+    <string name="header_apply_coupon">Apply Coupon</string>
+    <string name="dlg_msg_coupon_not_valid_on_offer">This Promo Code is not valid for the city in which this offer is applicable.</string>
+    <string name="label_checkbox_use_credits">Use Credits</string>
+    <string name="title_clear_cart">Clear Cart</string>
+    <string name="msg_clear_all_items">Clear all items?</string>
+    <string name="msg_apply_coupon">Do you want to apply coupon code %1$s ?</string>
+
+    <!-- empty cart screen -->
+    <string name="msg_no_items_in_cart">No items in cart.</string>
+    <string name="msg_unhappy_cart">Please go back and select the\n deals you want.\n(Or you are going to have one\nvery unhappy cart.)</string>
+
+    <!-- share options screen and share with phonebook screen -->
+    <string name="msg_share_deal_via">Share this deal via</string>
+    <string name="label_phonebook">Phonebook</string>
+    <string name="label_facebook">Facebook</string>
+    <string name="label_twitter">Twitter</string>
+    <string name="label_more_options">More Options</string>
+    <string name="label_cacnel">CANCEL</string>
+    <string name="share_wth_go_frnds">Share with your GO Friends</string>
+    <string name="share_now">SHARE NOW</string>
+    <string name="hint_search">Search</string>
+    <string name="msg_no_contacts">No contacts found in your phonebook.</string>
+
+    <!-- sharing subjects for email and for share via intent -->
+    <string name="subject_share_deal">%1$s: Irresistible exclusive deal</string>
+    <string name="subject_share_app">%1$s: Best on the Go deals for you</string>
+    <string name="subject_share_promo_code">%1$s: Best on the Go deals for you</string>
+
+    <!-- messages to share deal/purchase/redemption (%1$s will be either got or bought) -->
+    <string name="msg_share_deal_via_more_options">\nHey, I just %1$s an awesome deal on %2$s.\nDownload the app here: %3$s\nYes, you owe me one.</string>
+    <string name="msg_share_deal_via_facebook">Hey, I just %1$s this awesome deal on %2$s using %3$s.\nWish you had my luck?\nDownload the app here.</string>
+    <string name="msg_share_deal_via_twitter">Hey, I just %1$s this awesome deal on %2$s using %3$s.\nDownload the app here: %4$s</string>
+
+    <!-- messages to share my promo code (or to share app) -->
+    <string name="msg_share_my_promo_code_via_more_options">\nHey,\n\nSome people have a great nose for deals, others have a great app.\n\nExperience it for yourself. Download the iPhone/Android app and discover all the best deals where you are. You can use my code \'%1$s\' and avail a flat %2$s discount on your first purchase on %3$s. Get the app here: %4$s</string>
+    <string name="msg_share_my_promo_code_via_facebook">Use my code %1$s on your first %2$s purchase and get %3$s off. Could you have asked for a better friend? Get the app here.</string>
+    <string name="msg_share_my_promo_code_via_twitter">Use my code %1$s on your first %2$s purchase and get %3$s off. Get the app here: %4$s</string>
+
+    <!-- sharing response messages -->
+    <string name="msg_deal_share_success">Deal has been shared.</string>
+    <string name="msg_code_share_success">Coupon Code has been shared.</string>
+    <string name="msg_twitter_login_cancelled">Twitter login cancelled.</string>
+    <string name="msg_share_twitter_duplicate">This message is already shared on twitter.</string>
+    <string name="msg_share_twitter_no_share">Message not shared on twitter.</string>
+
+    <!-- actionbar menu names -->
+    <string name="title_action_search">Search</string>
+    <string name="title_action_share">Share</string>
+    <string name="title_action_cart">Cart</string>
+    <string name="title_action_delete_cart">Delete Cart</string>
+    <string name="title_action_map_show_all">Show All</string>
+    <string name="title_action_map_show_nearest">Show Nearest</string>
+    <!-- Pay By Saved/Credit/Debit Card Screen -->
+    <string name="btn_use_new_card">Use New Card</string>
+    <string name="btn_pay_via_net_banking">Pay via Net Banking</string>
+
+    <!-- payment cart -->
+    <string name="msg_transaction_cancelled">Transaction Cancelled.</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="header_payment_summary">Payment Summary</string>
+    <string name="header_payment">Payment</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="tag_oh_no">Uh-oh!</string>
+    <string name="tag_awesome">Yay!</string>
+    <string name="tag_payment_success">Your Payment was successful.</string>
+    <string name="tag_payment_wrong">Something went wrong with your payment.</string>
+    <string name="tag_like_to_try_again">Would you like to try this again?</string>
+    <string name="title_payment_summary">Payment Summary</string>
+    <string name="button_get_summary_at_mail">Get it at your e-mail</string>
+
+    <!-- user coupons screen -->
+    <string name="tag_expire_on">Expires On</string>
+    <string name="tag_vouchers">Vouchers</string>
+    <string name="button_avail_deal">AVAIL DEAL</string>
+    <string name="button_avail_now">AVAIL NOW</string>
+    <string name="tag_voucher">Voucher&#160;</string>
+    <string name="dlg_redeem_couopn_content">You will need to show the coupon to the merchant when you AVAIL the DEAL.</string>
+    <string name="dlg_redeem_couopn_footer">Please ensure you are at merchant location.</string>
+    <string name="header_coupon_summary">Availed Offers</string>
+
+    <string-array name="tab_title_coupons">
+        <item>ALL</item>
+        <item>EXPIRING</item>
+        <item>NEARBY</item>
+    </string-array>
+
+    <string name="toast_enable_location">Please turn Location Services ON (GPS or Network) on your device.</string>
+    <string name="toast_waiting_for_location">Waiting for current location.</string>
+
+    <!-- stored cards / add new card -->
+    <string name="header_store_cards_title">Stored Cards</string>
+    <string name="msg_intro_stored_cards">Introducing Stored Cards</string>
+    <string name="msg_just_save_your_card_details">Just save your card details for once and enjoy one-click payments</string>
+    <string name="button_add_your_card">Add Your Card</string>
+    <string name="title_your_stored_cards">Your Stored Cards</string>
+    <string name="tag_card_type">CARD TYPE</string>
+    <string name="tag_full_name">FULL NAME</string>
+    <string name="tag_name_card">CARD NAME</string>
+    <string name="tag_card_number">CARD NUMBER</string>
+    <string name="tag_exp_date">EXPIRY DATE</string>
+    <string name="tag_cvv">CVV</string>
+    <string name="hint_mm_yyyy">MM/YYYY</string>
+    <string name="hint_enter_cvv">Enter CVV</string>
+    <string name="tag_credit_card">CREDIT CARD</string>
+    <string name="tag_debit_card">DEBIT CARD</string>
+    <string name="toast_enter_name_as_on_card">Please enter your name as on card.</string>
+    <string name="toast_enter_card_num">Please enter card number.</string>
+    <string name="toast_enter_valid_card_num">Please enter a valid card number.</string>
+    <string name="toast_enter_card_name">Please enter a name for card.</string>
+    <string name="toast_select_expiry_date">Please select card expiry date.</string>
+    <string name="toast_enter_valid_cvv">Please enter a valid CVV.</string>
+    <string name="check_box_msg_add_card">Save this card for future transactions</string>
+    <string name="msg_unknown_card_type">Please check your card details.</string>
+    <string name="msg_wrong_card_type">You have selected wrong card type.</string>
+    <string name="dialog_msg_confirm_delete_card">Are you sure you want to delete this card?</string>
+
+    <!-- about us -->
+    <string name="btn_like_us_on_fb">Like us on facebook</string>
+    <string name="btn_follow_us_on_twitter">Follow us on twitter</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="btn_customer_support">Customer Support</string>
+    <string name="label_app_version">Version %1$s</string>
+
+    <!-- pay via net banking -->
+    <string name="header_net_banking">Select Your Bank</string>
+    <string name="msg_select_bank">Please select bank.</string>
+    <string name="msg_citi_bank_net_banking">Citibank Net Banking is not available for now. Please choose some other bank or pay via cards.</string>
+
+    <!-- change phone numbaer -->
+    <string name="msg_enter_old_phone">Please enter your old phone number:</string>
+    <string name="msg_enter_new_phone">Please enter your new phone number:</string>
+    <string name="hint_old_phone_number">Your Old Phone Number</string>
+    <string name="hint_new_phone_number">Your New Phone Number</string>
+    <string name="change_your_phone_number">Change Phone Number</string>
+    <string name="toast_msg_invalid_old_num">Please enter valid old mobile number.</string>
+    <string name="toast_msg_invalid_new_num">Please enter a valid new mobile number.</string>
+    <string name="toast_msg_same_num">Both numbers are same.</string>
+
+    <!-- Loader messages -->
+    <string name="msg_deals_bottom_progress">Loading latest deals for you&#8230;</string>
+    <string name="msg_custom_progress_dialog">Please wait while the content loads&#8230;</string>
+
+    <string-array name="array_msg_progress_dialog">
+        <item>While you wait, a few words of wisdom:\nWhatever you do in life, always give 100%. Unless you\'re donating blood.</item>
+        <item>We know it seems like hours, but it’s only been about few seconds. Honest.</item>
+        <item>Interesting fact #13\nDonald Duck comics were banned in Finland because he doesn’t wear any pants.</item>
+        <item>Did you know that in the time you’ve been waiting, Usain Bolt could have run across a cricket field.</item>
+        <item>Now would be a good time for a joke. A skeleton walks into a bar and says, “Give me a beer and a mop.”</item>
+        <item>Interesting fact while you wait:\nEvery Eskimo home in Alaska, has a refrigerator to keep the food from freezing.</item>
+        <item>Sorry to keep you waiting. The loading genie is solving a sudoku.</item>
+        <item>While you wait, a few words of wisdom:\nIf at first you don’t succeed, don’t try skydiving.</item>
+        <item>This is taking longer than expected. *Cue awkward silence*</item>
+        <item>Interesting fact #12\nIn Ohio, getting a fish drunk is punishable by law.</item>
+        <item>Rukawat ke liye khed hai.</item>
+        <item>Sorry for the delay. Our servers are trying to break a coconut for an auspicious start.</item>
+        <item>Sorry to keep you waiting. Alok Nath insists we say our prayers before doing anything.</item>
+        <item>Sorry for the delay. It seems our microprocessors are on a coffee break.</item>
+        <item>Still trying, we are -Yoda</item>
+    </string-array>
+
+</resources>

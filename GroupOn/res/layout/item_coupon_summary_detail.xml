@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_voucher_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/offer_total_price"
+                android:textSize="@dimen/splash_txv_12"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_voucher_code1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_grey_1"
+                android:textSize="@dimen/splash_txv_15"
+                kellton:customTypeFace="@string/font_museosans_500" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="58dp"
+            android:background="@color/common_grey_4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_voucher_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/offer_total_price"
+                android:textSize="@dimen/splash_txv_12"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_voucher_code2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_grey_1"
+                android:textSize="@dimen/splash_txv_15"
+                kellton:customTypeFace="@string/font_museosans_500" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_grey_4" />
+
+</LinearLayout>

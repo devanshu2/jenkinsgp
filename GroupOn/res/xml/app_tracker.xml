@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Replace placeholder ID with your tracking ID -->
+    <string name="ga_trackingId">UA-51600064-1</string>
+
+    <!-- Enable automatic activity tracking -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- Enable automatic exception tracking -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- The screen names that will appear in your reporting -->
+    <screenName name="com.groupon.go.ui.activity.SplashActivity">Splash Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.UserRegisterationActivity">Registration Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.UserNumberVerifyActivity">Verification Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.UserPrefrenceActivity">Gather Interest Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.UserProfileActivity">My Profile Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.CouponsActivity">My Purchases Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.HomeActivity">Home Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.SelectYourCityActivity">Select City Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.ProductDetailActivity">Deal Detail Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.CategoryDealsActivity">Category Deals Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.OfferDetailActivity">Offer Details Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.SearchProductActivity">Search Input Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.SearchResultsActivity">Search Result Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.UserCart">User Cart Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.PaymentOptionActivity">Payment Options Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.DealDeatailMapActivity">Map Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.ShareOptionsActivity">Share Options Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.ShareOnPhnBookActivity">Share via Phone-book Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.PaymentWebView">Payment Web-page Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.PaymentSuccessActivity">Payment Success Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.PaymentFailureActivity">Payment Failure Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.PayViaSaveCardsActivity">Pay Via Stored Cards Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.UserStoredCardsActivity">Storted Cards List Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.RedeemVouchersActivity">Redeemption Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.AboutUsActivity">About Us Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.AddNewCardActivity">New Card Input Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.PayViaNetBankingActivity">Select Bank for Net Banking Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.MyCreditsActivity">My Credits Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.ChangeUserPhoneNumActivity">Change Mobile Number Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.ChangeUserPhoneNumActivity">Coupon Summary Screen</screenName>
+    <screenName name="com.groupon.go.ui.activity.ChangeUserPhoneNumActivity">Terms/Privacy Screen</screenName>
+
+</resources>

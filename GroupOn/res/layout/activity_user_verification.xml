@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_green_no_border_no_round" >
+
+    <include layout="@layout/groupon_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/msg_enter_verif_code"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/splash_txv_16"
+            kellton:customTypeFace="@string/font_museosans_300" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_verification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/textfield_default_holo_dark"
+        android:hint="@string/verfication_code_hint"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_color"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:textSize="@dimen/splash_txv_18" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_verification_code"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/splash_txv_15"
+        kellton:customTypeFace="@string/font_museosans_300" />
+
+</RelativeLayout>

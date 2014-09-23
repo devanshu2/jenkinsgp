@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone" >
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/offer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:textColor="@color/common_grey_2"
+        android:textSize="@dimen/splash_txv_12"
+        kellton:customTypeFace="@string/font_museosans_300" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/offer_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/offer_name"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textColor="@color/offer_total_price"
+        android:textSize="@dimen/splash_txv_12"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/offer_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/offer_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/offer_name"
+        android:drawablePadding="4dp"
+        android:padding="10dp"
+        android:textColor="@color/offer_total_price"
+        android:textSize="@dimen/splash_txv_12"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/product_detail_divider" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- custom GrouponGo Base Theme -->
+
+    <style name="CustomAppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/StyleCustomActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="StyleCustomActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/gradient_green_no_border_no_round</item>
+        <item name="android:titleTextStyle">@style/CustomActionBarTitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/CustomActionBarSubTitleTextStyle</item>
+    </style>
+
+</resources>

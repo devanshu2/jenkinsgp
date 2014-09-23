@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_visible_area_root"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:background="@android:color/white" >
+
+        <View
+            android:id="@+id/top_layout_divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradient_green_no_border_no_round" />
+
+        <RelativeLayout
+            android:id="@+id/offer_headline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_layout_divider" >
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/offer_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_remv_deal"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/splash_txv_17"
+                kellton:customTypeFace="@string/font_museosans_500" />
+
+            <ImageView
+                android:id="@id/img_remv_deal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/common_image_content_desc"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/offer_headline"
+                layout="@layout/product_detail_divider" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_grand_total_and_buttons"
+            android:layout_below="@id/offer_headline_layout" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/root_layout_offers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/root_layout_total_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/root_layout_offers"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        layout="@layout/product_detail_divider" />
+
+                    <com.kelltontech.ui.widget.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/total"
+                        android:textColor="@color/common_grey_2"
+                        android:textSize="@dimen/splash_txv_16"
+                        kellton:customTypeFace="@string/font_museosans_500" />
+
+                    <include layout="@layout/product_detail_divider" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linear_grand_total_and_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relative_grand_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_yellow_bg_color"
+                android:padding="10dp" >
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:id="@+id/buy_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="@string/grand_total"
+                    android:textColor="@color/common_grey_2"
+                    android:textSize="@dimen/splash_txv_15"
+                    kellton:customTypeFace="@string/font_museosans_500" />
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:id="@+id/total_amount_offer_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:textColor="@color/offer_total_price"
+                    android:textSize="@dimen/splash_txv_15"
+                    kellton:customTypeFace="@string/font_museosans_500" />
+            </RelativeLayout>
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_ensure_merchant_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/msg_redeem_help_1"
+                android:textColor="@color/common_grey_2"
+                android:textSize="@dimen/splash_txv_12"
+                android:visibility="gone"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <LinearLayout
+                android:id="@+id/layout_bottom_offer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_button_height"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/view_add_to_cart"
+                    android:layout_width="@dimen/width_add_to_cart_or_price"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rect_gray_no_border_all_round"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_add_to_cart" />
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:id="@+id/offer_buy_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_green_no_border_all_round"
+                    android:gravity="center"
+                    android:text="@string/pay_now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/splash_txv_17"
+                    kellton:customTypeFace="@string/font_museosans_500" />
+            </LinearLayout>
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_redeem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_button_height"
+                android:layout_margin="10dp"
+                android:background="@drawable/gradient_green_no_border_all_round"
+                android:gravity="center"
+                android:text="@string/button_avail_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/splash_txv_17"
+                android:visibility="gone"
+                kellton:customTypeFace="@string/font_museosans_500" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_button_height"
+                android:layout_margin="10dp"
+                android:background="@drawable/gradient_green_no_border_all_round"
+                android:gravity="center"
+                android:text="@string/button_save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/splash_txv_17"
+                android:visibility="gone"
+                kellton:customTypeFace="@string/font_museosans_500" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

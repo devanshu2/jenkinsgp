@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="com.kelltontech.ui.widget.CustomTextView">
+        <attr name="customTypeFace" format="string" />
+    </declare-styleable>
+    <declare-styleable name="com.kelltontech.ui.widget.gif.GifDecoderView">
+        <attr name="android:contentDescription" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,73 @@
+{
+    is_success: true,
+    message: "No Error",
+    error_code: "1",
+    result: {
+        profile: [
+            {
+                user_id: 18,
+                username: "Sachin",
+                coupon_code: "GRPN18",
+                mobile_no: "8130687892",
+                emailId: "sachin.gupta@yahoo.com",
+                profile_image: ""
+            }
+        ],
+        category_selected: [
+            
+        ],
+        category: [
+            {
+                tid: 219,
+                cat_name: "Food and Drinks",
+                cat_icon_unselected: "food.png",
+                cat_icon_selected: "food_selected.png",
+                cat_id: 1
+            },
+            {
+                tid: 276,
+                cat_name: "Shopping",
+                cat_icon_unselected: "shopping.png",
+                cat_icon_selected: "shopping_selected.png",
+                cat_id: 2
+            },
+            {
+                tid: 225,
+                cat_name: "Beauty & Spa",
+                cat_icon_unselected: "beauty.png",
+                cat_icon_selected: "beauty_selected.png",
+                cat_id: 3
+            },
+            {
+                tid: 236,
+                cat_name: "Health & Fitness",
+                cat_icon_unselected: "health.png",
+                cat_icon_selected: "health_selected.png",
+                cat_id: 4
+            },
+            {
+                tid: 243,
+                cat_name: "Events & Activities",
+                cat_icon_unselected: "events.png",
+                cat_icon_selected: "events_selected.png",
+                cat_id: 5
+            },
+            {
+                tid: 261,
+                cat_name: "Services",
+                cat_icon_unselected: "other_services.png",
+                cat_icon_selected: "other_services_selected.png",
+                cat_id: 6
+            },
+            {
+                tid: 290,
+                cat_name: "Getaways",
+                cat_icon_unselected: "getaways.png",
+                cat_icon_selected: "getaways_selected.png",
+                cat_id: 7
+            }
+        ],
+        cart_count: 0,
+        credit: 0
+    }
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:id="@+id/root_lay_summary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_offer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="8dp"
+        android:textColor="@color/common_grey_2"
+        android:textSize="@dimen/splash_txv_16"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_offer_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txv_offer_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_rectangle_bg"
+        android:padding="6dp"
+        android:textColor="@color/common_grey_1"
+        android:textSize="@dimen/splash_txv_12"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_coupon_offer_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_offer_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/common_grey_2"
+        android:textSize="@dimen/splash_txv_15"
+        kellton:customTypeFace="@string/font_museosans_300" />
+
+    <View
+        android:id="@+id/divider_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txv_coupon_offer_desc"
+        android:layout_marginTop="4dp"
+        android:background="@color/common_grey_4" />
+
+    <LinearLayout
+        android:id="@+id/root_layout_coupon_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_coupon"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_coupon_double"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/root_layout_coupon_header"
+        android:background="@color/common_grey_4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/divider_coupon_double"
+        android:layout_marginTop="2dp"
+        android:background="@color/common_grey_4" />
+
+</RelativeLayout>

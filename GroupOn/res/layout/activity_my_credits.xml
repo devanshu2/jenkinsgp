@@ -1,0 +1,159 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_green_no_border_no_round"
+    android:paddingTop="?attr/actionBarSize" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/common_image_content_desc"
+                android:src="@drawable/ic_bubble" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_credit_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/msg_my_credit_screen"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/splash_txv_13"
+                android:textStyle="bold"
+                kellton:customTypeFace="@string/font_museosans_700" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/msg_instant_karma"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/splash_txv_13"
+                android:textStyle="bold"
+                kellton:customTypeFace="@string/font_museosans_700" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_rect_white_border"
+                android:orientation="horizontal" >
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/label_my_credits"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/splash_txv_18"
+                    kellton:customTypeFace="@string/font_museosans_700" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:id="@+id/txv_value_my_credits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/splash_txv_18"
+                    kellton:customTypeFace="@string/font_museosans_700" />
+            </LinearLayout>
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/label_share_with"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/splash_txv_13"
+                android:textStyle="bold"
+                kellton:customTypeFace="@string/font_museosans_700" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <ImageView
+                    android:id="@+id/img_fb_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:id="@+id/img_twt_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_twitter" />
+
+                <ImageView
+                    android:id="@+id/img_msg_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_message"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_email_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_email" />
+
+                <ImageView
+                    android:id="@+id/img_phnbk_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_phone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_left_nav_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

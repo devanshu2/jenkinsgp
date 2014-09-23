@@ -1,0 +1,11 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/deals_list_item_height"
+    android:paddingLeft="@dimen/deals_list_padding_and_divider"
+    android:paddingRight="@dimen/deals_list_padding_and_divider" >
+
+    <include layout="@layout/item_pager_deal_detail" />
+
+    <include layout="@layout/layout_deal_image_bottom_overlay" />
+
+</RelativeLayout>

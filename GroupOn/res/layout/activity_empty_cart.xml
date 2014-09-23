@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grouopn_go_theme_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_empty_cart"
+        android:gravity="center_horizontal"
+        android:text="@string/msg_no_items_in_cart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/splash_txv_21"
+        kellton:customTypeFace="@string/font_museosans_700" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/msg_unhappy_cart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/splash_txv_17"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+</LinearLayout>

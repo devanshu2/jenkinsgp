@@ -1,0 +1,6 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="style_edt_enter_phn_number" parent="@style/base_style_edt_enter_phn_number">
+        <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
+    </style>
+</resources>

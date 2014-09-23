@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_40"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/linear_root_progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rect_all_round_white_bg_no_border"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_groupon_pin"
+                android:contentDescription="@string/common_image_content_desc" />
+
+            <ProgressBar
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/dialog_indeterminate" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_divider_progress_dialog"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:background="@color/grouopn_go_theme_color" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_progress_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/common_grey_1"
+            android:textSize="@dimen/splash_txv_15"
+            kellton:customTypeFace="@string/font_avantgarde_md_bt_medium" />
+    </LinearLayout>
+
+</RelativeLayout>

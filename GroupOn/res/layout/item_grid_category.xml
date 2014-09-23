@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/iv_module_icon"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        android:src="@drawable/ic_default_cat_unsel" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/tv_module_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/common_white_like_text_color"
+        android:textSize="@dimen/item_text_grid_home"
+        kellton:customTypeFace="@string/font_museosans_700" />
+
+</LinearLayout>

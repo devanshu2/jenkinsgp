@@ -1,0 +1,145 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="?attr/actionBarSize" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_msg_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/common_grey_2"
+                android:textSize="@dimen/splash_txv_16"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <View
+                android:id="@+id/view_divider_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txv_msg_about_us"
+                android:background="@color/common_grey_4" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_like_on_fb"
+                style="@style/style_txv_about_us_links"
+                android:layout_below="@+id/view_divider_1"
+                android:drawableLeft="@drawable/ic_share_facebook"
+                android:text="@string/btn_like_us_on_fb"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <View
+                android:id="@+id/view_divider_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txv_like_on_fb"
+                android:background="@color/common_grey_4" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_follow_on_twitter"
+                style="@style/style_txv_about_us_links"
+                android:layout_below="@+id/view_divider_2"
+                android:drawableLeft="@drawable/ic_share_twitter"
+                android:text="@string/btn_follow_us_on_twitter"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <View
+                android:id="@+id/view_divider_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txv_follow_on_twitter"
+                android:background="@color/common_grey_4" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_terms_of_use"
+                style="@style/style_txv_about_us_links"
+                android:layout_below="@+id/view_divider_3"
+                android:drawableLeft="@drawable/ic_terms_of_use"
+                android:text="@string/terms_of_use"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <View
+                android:id="@+id/view_divider_4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txv_terms_of_use"
+                android:background="@color/common_grey_4" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_privacy_policy"
+                style="@style/style_txv_about_us_links"
+                android:layout_below="@+id/view_divider_4"
+                android:drawableLeft="@drawable/ic_privacy_policy"
+                android:text="@string/privacy_policy"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <View
+                android:id="@+id/view_divider_5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txv_privacy_policy"
+                android:background="@color/common_grey_4" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_customer_support"
+                style="@style/style_txv_about_us_links"
+                android:layout_below="@+id/view_divider_5"
+                android:drawableLeft="@drawable/ic_share_phonebook"
+                android:text="@string/btn_customer_support"
+                kellton:customTypeFace="@string/font_museosans_300" />
+
+            <View
+                android:id="@+id/view_divider_6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txv_customer_support"
+                android:background="@color/common_grey_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view_divider_6"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical" >
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:id="@+id/txv_app_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/common_grey_1"
+                    android:textSize="@dimen/splash_txv_18"
+                    kellton:customTypeFace="@string/font_museosans_700" />
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:id="@+id/txv_copyright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/common_grey_2"
+                    android:textSize="@dimen/splash_txv_12"
+                    kellton:customTypeFace="@string/font_museosans_700" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_left_nav_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

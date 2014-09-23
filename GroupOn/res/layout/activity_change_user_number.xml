@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_green_no_border_no_round" >
+
+    <include
+        android:id="@+id/header_chane_number"
+        layout="@layout/groupon_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_chane_number"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/msg_enter_old_phone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/splash_txv_16"
+            kellton:customTypeFace="@string/font_museosans_300" />
+
+        <EditText
+            android:id="@+id/edt_old_phone_number"
+            style="@style/style_edt_enter_phn_number"
+            android:hint="@string/hint_old_phone_number"
+            android:imeOptions="actionNext" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/msg_enter_new_phone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/splash_txv_16"
+            kellton:customTypeFace="@string/font_museosans_300" />
+
+        <EditText
+            android:id="@+id/edt_new_phone_number"
+            style="@style/style_edt_enter_phn_number"
+            android:hint="@string/hint_new_phone_number"
+            android:imeOptions="actionDone" />
+    </LinearLayout>
+
+</RelativeLayout>

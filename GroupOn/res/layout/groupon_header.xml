@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_header_height"
+    android:layout_alignParentTop="true"
+    android:background="@null" >
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_groupon_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/view_groupon_header_vertical_dvdr"
+        android:drawableLeft="@drawable/ic_arrow_left_header"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColor="@color/common_white_like_text_color"
+        android:textSize="@dimen/common_header_text_size"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+    <ImageView
+        android:id="@+id/cart_image"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_cart_empty"
+        android:contentDescription="@string/common_image_content_desc"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="7dp"
+        android:visibility="gone" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_header_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/cart_image"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/shape_white_circle"
+        android:ellipsize="none"
+        android:gravity="top|center_horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:singleLine="true"
+        android:textColor="@color/grouopn_go_theme_color"
+        android:textSize="@dimen/splash_txv_13"
+        android:textStyle="bold"
+        android:visibility="gone"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="@dimen/common_header_height"
+        android:layout_height="@dimen/common_header_height"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/cart_image"
+        android:contentDescription="@string/common_image_content_desc"
+        android:padding="8dp"
+        android:src="@drawable/ic_search"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_groupon_header_right_btn"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_search"
+        android:clickable="false"
+        android:contentDescription="@string/common_image_content_desc"
+        android:padding="12dp"
+        android:src="@drawable/ic_nav_check" />
+
+    <View
+        android:id="@+id/view_groupon_header_vertical_dvdr"
+        android:layout_width="1dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_groupon_header_right_btn"
+        android:background="@color/common_white_like_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4DEFEEEC" />
+
+</RelativeLayout>

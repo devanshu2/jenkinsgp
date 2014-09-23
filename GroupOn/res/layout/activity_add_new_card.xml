@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tag_card_type"
+                android:textColor="@color/card_detail_tag"
+                android:textSize="@dimen/splash_txv_12"
+                kellton:customTypeFace="@string/font_museosans_700" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:id="@+id/rdbtn_credit_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/btn_radio_on_disabled_focused_holo_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/tag_credit_card"
+                    android:textColor="@color/card_detail_tag"
+                    android:textSize="@dimen/splash_txv_12"
+                    kellton:customTypeFace="@string/font_museosans_700" />
+
+                <com.kelltontech.ui.widget.CustomTextView
+                    android:id="@+id/rdbtn_debit_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/btn_radio_off_disabled_focused_holo_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/tag_debit_card"
+                    android:textColor="@color/card_detail_tag"
+                    android:textSize="@dimen/splash_txv_12"
+                    kellton:customTypeFace="@string/font_museosans_700" />
+            </LinearLayout>
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tag_full_name"
+                android:textColor="@color/card_detail_tag"
+                android:textSize="@dimen/splash_txv_12"
+                kellton:customTypeFace="@string/font_museosans_700" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_full_name" />
+
+                <EditText
+                    android:id="@+id/edt_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </LinearLayout>
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tag_card_number"
+                android:textColor="@color/card_detail_tag"
+                android:textSize="@dimen/splash_txv_12"
+                kellton:customTypeFace="@string/font_museosans_700" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_cvv_no" />
+
+                <EditText
+                    android:id="@+id/edt_user_card_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="19" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.kelltontech.ui.widget.CustomTextView
+                        android:id="@+id/txv_tag_exp_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_exp_date"
+                        android:textColor="@color/card_detail_tag"
+                        android:textSize="@dimen/splash_txv_12"
+                        kellton:customTypeFace="@string/font_museosans_700" />
+
+                    <ImageView
+                        android:id="@+id/img_exp_date"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/txv_tag_exp_date"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/common_image_content_desc"
+                        android:src="@drawable/ic_expires" />
+
+                    <com.kelltontech.ui.widget.CustomTextView
+                        android:id="@+id/txv_exp_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/img_exp_date"
+                        android:layout_below="@id/txv_tag_exp_date"
+                        android:layout_toRightOf="@id/img_exp_date"
+                        android:padding="15dp"
+                        android:text="@string/hint_mm_yyyy"
+                        android:textColor="@color/card_detail_tag"
+                        android:textSize="@dimen/splash_txv_12"
+                        kellton:customTypeFace="@string/font_museosans_700" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay_cvv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.kelltontech.ui.widget.CustomTextView
+                        android:id="@+id/txv_tag_cvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_cvv"
+                        android:textColor="@color/card_detail_tag"
+                        android:textSize="@dimen/splash_txv_12"
+                        kellton:customTypeFace="@string/font_museosans_700" />
+
+                    <ImageView
+                        android:id="@+id/img_cvv"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/txv_tag_cvv"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/common_image_content_desc"
+                        android:src="@drawable/ic_cvv_no" />
+
+                    <EditText
+                        android:id="@+id/edt_user_cvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txv_tag_cvv"
+                        android:layout_toRightOf="@id/img_cvv"
+                        android:inputType="numberPassword"
+                        android:maxLength="4" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chbx_save_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/check_box_msg_add_card"
+                android:textColor="@color/common_grey_1"
+                android:textSize="@dimen/splash_txv_13"
+                android:visibility="gone" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_card_name_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tag_name_card"
+                android:textColor="@color/card_detail_tag"
+                android:textSize="@dimen/splash_txv_12"
+                android:visibility="gone"
+                kellton:customTypeFace="@string/font_museosans_700" />
+
+            <LinearLayout
+                android:id="@+id/lay_card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:contentDescription="@string/common_image_content_desc"
+                    android:src="@drawable/ic_full_name" />
+
+                <EditText
+                    android:id="@+id/edt_card_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_btn_pay_via_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_button_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient_green_no_border_all_round"
+            android:gravity="center"
+            android:text="@string/button_save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/splash_txv_17"
+            kellton:customTypeFace="@string/font_museosans_500" />
+
+        <View
+            android:id="@+id/view_divider_above_net_banking"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/common_divider_color" />
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/txv_btn_pay_via_net_banking"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_button_height"
+            android:background="@color/common_grey_3"
+            android:drawableLeft="@drawable/ic_net_banking"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/btn_pay_via_net_banking"
+            android:textColor="@color/common_grey_1"
+            android:textSize="@dimen/splash_txv_17"
+            kellton:customTypeFace="@string/font_museosans_500" />
+
+        <View
+            android:id="@+id/view_divider_below_net_banking"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/common_divider_color" />
+    </LinearLayout>
+
+</ScrollView>

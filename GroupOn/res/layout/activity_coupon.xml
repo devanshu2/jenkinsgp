@@ -1,0 +1,21 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_green_no_border_no_round"
+    android:paddingTop="?attr/actionBarSize" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_notification_on_screen" />
+
+        <include layout="@layout/layout_tabs_and_list_for_deals" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_left_nav_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

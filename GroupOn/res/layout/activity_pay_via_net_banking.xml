@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize" >
+
+    <RelativeLayout
+        android:id="@+id/relative_search_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_green_no_border_no_round"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/edt_search_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfield_default_holo_dark"
+            android:drawableLeft="@drawable/ic_search_hint"
+            android:drawablePadding="8dp"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="0dp"
+            android:paddingRight="35dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textCursorDrawable="@drawable/custom_cursor" />
+
+        <ImageView
+            android:id="@+id/img_search_cross"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/edt_search_contacts"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/common_image_content_desc"
+            android:padding="8dp"
+            android:src="@drawable/ic_cross_white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_bank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txv_pay_net_banking"
+        android:layout_below="@id/relative_search_contacts" >
+    </ListView>
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@id/txv_pay_net_banking"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradient_green_no_border_all_round"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/splash_txv_17"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+</RelativeLayout>

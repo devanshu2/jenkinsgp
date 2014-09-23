@@ -1,0 +1,135 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Themes -->
+
+    <style name="CustomAppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/CustomActionBar</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="ThemeOverlayActivity" parent="CustomAppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_40</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme_Dialog_40">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent_40</item>
+    </style>
+
+    <!-- Styles -->
+    <style name="CustomActionBar" parent="@style/Widget.AppCompat.ActionBar">
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/CustomActionBarTitleTextStyle</item>
+        <item name="background">@drawable/gradient_green_no_border_no_round</item>
+        <item name="subtitleTextStyle">@style/CustomActionBarSubTitleTextStyle</item>
+    </style>
+
+    <!-- action bar title text -->
+    <style name="CustomActionBarTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/common_header_text_size</item>
+    </style>
+
+    <style name="CustomActionBarSubTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/splash_txv_12</item>
+    </style>
+
+    <style name="root_fragment_layout">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="splash_txv_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/common_white_like_text_color</item>
+    </style>
+
+    <style name="style_txv_deal_list_and_details">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <style name="style_photo_options_dialog_btn">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/profile_screen_ts1</item>
+        <item name="android:textColor">@color/common_grey_3</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/photo_option_dialog_button_bg</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="row_style">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+    </style>
+
+    <style name="style_txv_share_option">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/common_grey_1</item>
+        <item name="android:textSize">@dimen/splash_txv_18</item>
+    </style>
+
+    <style name="style_txv_about_us_links">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/common_grey_3</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:drawableRight">@drawable/ic_arrow_forward_black</item>
+        <item name="android:textColor">@color/common_grey_1</item>
+        <item name="android:textSize">@dimen/splash_txv_16</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="base_style_edt_enter_phn_number">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/textfield_default_holo_dark</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">14</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:textSize">@dimen/splash_txv_18</item>
+    </style>
+
+    <style name="style_edt_enter_phn_number" parent="@style/base_style_edt_enter_phn_number">
+        <!-- this style is overidden in values-v12/styles.xml to use android:textCursorDrawable -->
+    </style>
+
+</resources>

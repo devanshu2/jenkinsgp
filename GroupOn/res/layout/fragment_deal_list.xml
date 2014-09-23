@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey_4"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listview_deals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/common_grey_4"
+        android:dividerHeight="@dimen/deals_list_padding_and_divider"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="@dimen/deals_list_padding_and_divider"
+        android:paddingTop="@dimen/deals_list_padding_and_divider" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom_loader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_black_no_border_no_round"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_groupon_pin"
+                android:contentDescription="@string/common_image_content_desc" />
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/dialog_indeterminate" />
+        </RelativeLayout>
+
+        <com.kelltontech.ui.widget.CustomTextView
+            style="@style/style_txv_deal_list_and_details"
+            android:layout_marginLeft="5dp"
+            android:text="@string/msg_deals_bottom_progress"
+            android:textSize="@dimen/splash_txv_13"
+            kellton:customTypeFace="@string/font_museosans_500" />
+    </LinearLayout>
+
+</RelativeLayout>

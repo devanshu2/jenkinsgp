@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_green_no_border_no_round" >
+
+    <include layout="@layout/groupon_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/msg_enter_phone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/splash_txv_16"
+            kellton:customTypeFace="@string/font_museosans_300" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/spinner_country"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <Spinner
+                android:id="@+id/country_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_below_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#AED695" >
+
+            <ImageView
+                android:id="@+id/flag_icon"
+                android:layout_width="24dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_flag"
+                android:contentDescription="@string/common_image_content_desc" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/txv_country_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/flag_icon"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/splash_txv_18"
+                kellton:customTypeFace="@string/font_museosans_500" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_arrow_right_spinner"
+                android:contentDescription="@string/common_image_content_desc" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_phone_number"
+        style="@style/style_edt_enter_phn_number"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:hint="@string/hint_phone_number" />
+
+    <com.kelltontech.ui.widget.CustomTextView
+        android:id="@+id/txv_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/edt_phone_number"
+        android:layout_below="@id/edt_phone_number"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:text="@string/terms_of_use"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/splash_txv_16"
+        kellton:customTypeFace="@string/font_museosans_500" />
+
+</RelativeLayout>

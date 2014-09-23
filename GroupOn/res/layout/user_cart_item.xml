@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kellton="http://schemas.android.com/apk/res/com.groupon.go"
+    android:id="@+id/user_cart_item_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null" >
+
+    <RelativeLayout
+        android:id="@+id/offer_headline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:id="@+id/offer_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_remv_deal"
+            android:ellipsize="end"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/splash_txv_17"
+            kellton:customTypeFace="@string/font_museosans_500" />
+
+        <ImageView
+            android:id="@id/img_remv_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:contentDescription="@string/common_image_content_desc"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/offer_headline"
+            layout="@layout/product_detail_divider" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cart_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offer_headline_layout"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cart_item_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/cart_item_root" >
+
+        <com.kelltontech.ui.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:text="@string/total"
+            android:textColor="@color/common_grey_2"
+            android:textSize="@dimen/splash_txv_15"
+            kellton:customTypeFace="@string/font_museosans_300" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/cart_offer_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/offer_total_price"
+                android:textSize="@dimen/splash_txv_15"
+                kellton:customTypeFace="@string/font_museosans_500" />
+
+            <com.kelltontech.ui.widget.CustomTextView
+                android:id="@+id/offer_amount_after_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:textSize="@dimen/splash_txv_15"
+                android:visibility="gone"
+                kellton:customTypeFace="@string/font_museosans_500" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            layout="@layout/product_detail_divider" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/product_detail_divider" />
+    </RelativeLayout>
+
+</RelativeLayout>

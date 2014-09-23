@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+@author Sachin Gupta
+Jan 8, 2012
+ --><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+  
+	<WebView
+	    android:id="@+id/paymentWebview"
+	    android:focusable="true"
+	    android:layout_marginTop="?attr/actionBarSize"
+	    android:focusableInTouchMode="true"
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	
+</RelativeLayout>

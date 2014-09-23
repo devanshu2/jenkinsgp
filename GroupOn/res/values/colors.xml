@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="action_button_background_color">#005c9b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="press_color_dialog_button">#DBD7D7</color>
+    <color name="button_color_dialog">#0080FF</color>
+    <color name="grouopn_go_theme_color">#83AF4F</color>
+    <color name="transparent_40">#99000000</color>
+    <color name="transparent_20">#CC000000</color>
+
+    <!-- common colors for all screens -->
+    <color name="common_white_like_text_color">#edffd6</color>
+    <color name="common_divider_color">#33828080</color>
+    <color name="common_grey_1">#686868</color>
+    <color name="common_grey_2">#828080</color>
+    <color name="common_grey_3">#f9f9f9</color>
+    <color name="common_grey_4">#FFEEEEEE</color>
+    <color name="common_grey_for_tab_hover">#CDCDCD</color>
+    <color name="common_yellow_bg_color">#FFFDE7</color>
+
+    <!-- select your city screen -->
+    <color name="city_list_item_city_name_color">#6f6d6d</color>
+    <color name="hint_color">#AED490</color>
+    <color name="text_shadow_alpha0.5">#7F000000</color>
+    <color name="text_shadow_alpha0.2">#33000000</color>
+    <color name="list_nav_selecetd">#A7A6A7</color>
+    <color name="list_nav_unselecetd">#BBBABB</color>
+
+    <!-- product detail screen -->
+    <color name="bg_add_to_cart_or_price">#809B9B9B</color>
+    <color name="drag_up_to_read">#73B773</color>
+
+    <!-- offer detail -->
+    <color name="offer_total_price">#555555</color>
+    <color name="offer_amount_color">#72B56A</color>
+    <color name="offer_amount_bg">#EEEEEEFF</color>
+
+    <!-- search screen -->
+    <color name="bg_recent_search">#6FA065</color>
+    <color name="recent_search_color">#F0FFDE</color>
+    <color name="list_divider">#D8D8D8</color>
+
+    <!-- user cart screen -->
+    <color name="cart_offer_amt">#62AC60</color>
+    <color name="cart_offer_amt_opa_10">#1A62AC60</color>
+    <color name="cart_offer_bg">#F0F0F0</color>
+
+    <!-- payment failure screen -->
+    <color name="red_label_oh_no">#FE5266</color>
+
+    <!-- card detail -->
+    <color name="card_detail_tag">#4A4A4A</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+
+</resources>
